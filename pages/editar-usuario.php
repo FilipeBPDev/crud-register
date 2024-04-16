@@ -19,8 +19,16 @@ $row = $res->fetch_object();
         <input type="email" name="email" id="email" value="<?=$row->email?>" class="form-control">
     </div>
     <div class="mb-3">
-        <label for="senha">Senha</label>
-        <input type="password" name="senha" id="senha" class="form-control" required> <!--Senha vem em branco, mas é obrigatória para finalizar a edição-->
+        <label for="senha-antiga">Senha Antiga</label>
+        <input type="password" name="senha-antiga" id="senha" class="form-control" required> <!--Senha vem em branco, mas é obrigatória para finalizar a edição-->
+    </div>
+    <div class="mb-3">
+        <label for="nova-senha">Nova Senha</label>
+        <input type="password" name="nova-senha" id="senha" class="form-control" required> <!--Senha vem em branco, mas é obrigatória para finalizar a edição-->
+    </div>
+    <div class="mb-3">
+        <label for="conf-nova-senha">Confirmar Nova Senha</label>
+        <input type="password" name="conf-nova-senha" id="senha" class="form-control" required> <!--Senha vem em branco, mas é obrigatória para finalizar a edição-->
     </div>
     <div class="mb-3">
         <label for="data">Data de Nascimento</label>
